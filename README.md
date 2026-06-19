@@ -1,4 +1,4 @@
-<h1 align="center">Open Claw AI | ClawVision 🤖</h1>
+<h1 align="center">Karim Allel | Open Claw AI | ClawVision 🤖</h1>
 
 <p align="center">
   <b>AI Software for 24/7 Industrial Robots | Fanuc, ABB, Kuka | 99.2% Uptime</b>
@@ -29,5 +29,6 @@
 </p>
 
 ### 📫 تواصل معي
-💼 لينكدإن: https://linkedin.com/in/karim-allel
-- ✉️ الإيميل: karim.allel@gmail.com
+
+- 💼 **LinkedIn**: https://linkedin.com/in/karim-allel
+- ✉️ **Email**: karim.allel@gmail.com
