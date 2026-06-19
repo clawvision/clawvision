@@ -1,5 +1,7 @@
 <h1 align="center">Karim Allel | Open Claw AI | ClawVision 🤖</h1>
-
+<p align="center">
+  <img src="https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif" width="700">
+</p>
 <p align="center">
   <b>AI Software for 24/7 Industrial Robots | Fanuc, ABB, Kuka | 99.2% Uptime</b>
 </p>
