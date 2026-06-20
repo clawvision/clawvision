@@ -32,7 +32,7 @@
  <p align="center">
      <img src="https://github-readme-stats.vercel.app/api?username=clawvision&show_icons=true&theme=tokyonight&hide_border=true">
 </p> 
-  <img src="https://github-profile-trophy.vercel.app/?username=clawvision&theme=tokyonight&no-frame=true&row=1&column=6">
+<p align="center"><img src="https://github-profile-trophy.vercel.app/?username=clawvision&theme=tokyonight&no-frame=true&row=1&column=6"></p>
 
 
 
