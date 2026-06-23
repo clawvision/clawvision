@@ -1,86 +1,202 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ClawVision - برمجة الروبوتات الصناعية</title>
+    <title>ClawVision - AI Software for FANUC, KUKA, Yaskawa Robots</title>
+    <meta name="description" content="99.2% uptime AI solutions for industrial robots. Reduce downtime by 80% with ClawVision.">
+    
     <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, sans-serif;
-            background-color: #0d1117;
-            color: #c9d1d9;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #fff;
         }
         .container {
-            max-width: 900px;
+            max-width: 1100px;
             margin: 0 auto;
-            background-color: #161b22;
-            padding: 40px;
-            border-radius: 10px;
-            border: 1px solid #30363d;
+            padding: 0 20px;
         }
-        h1 { color: #58a6ff; font-size: 2.8em; margin-bottom: 10px; }
-        h2 { color: #58a6ff; border-bottom: 1px solid #30363d; padding-bottom: 10px; margin-top: 40px; }
-        .subtitle { color: #8b949e; font-size: 1.2em; margin-bottom: 30px; }
-        .btn {
-            background-color: #238636;
-            color: white;
-            padding: 14px 30px;
+        header {
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo { font-weight: 700; font-size: 24px; }
+        .lang-switch a {
             text-decoration: none;
-            border-radius: 6px;
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 0;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+        .hero h2 {
+            font-size: 24px;
+            color: #555;
+            margin-bottom: 24px;
+            font-weight: 400;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto 32px;
+        }
+        .btn {
             display: inline-block;
-            margin-top: 20px;
-            font-weight: bold;
+            background: #00C853;
+            color: white;
+            padding: 14px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
             transition: 0.2s;
         }
-        .btn:hover { background-color: #2ea043; }
+        .btn:hover { background: #00B34A; transform: translateY(-2px); }
         .tech {
+            padding: 60px 0;
+            background: #f8f9fa;
+            text-align: center;
+        }
+        .tech h3 {
+            font-size: 28px;
+            margin-bottom: 40px;
+        }
+        .tech-logos {
             display: flex;
             justify-content: center;
             gap: 50px;
-            margin-top: 30px;
             flex-wrap: wrap;
+            align-items: center;
         }
         .tech-item { text-align: center; }
-        .tech-item img {
-            height: 50px;
-            filter: grayscale(1) brightness(1.5);
-            transition: 0.3s;
+        .tech-item img { height: 50px; margin-bottom: 8px; }
+        .tech-item p { font-weight: 600; color: #333; }
+        .features {
+            padding: 80px 0;
+            text-align: center;
         }
-        .tech-item img:hover {
-            filter: grayscale(0) brightness(1);
-            transform: scale(1.1);
+        .features h3 {
+            font-size: 32px;
+            margin-bottom: 50px;
         }
-        .tech-item p { margin-top: 10px; font-size: 0.9em; color: #8b949e; }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            text-align: left;
+        }
+        .feature h4 {
+            font-size: 22px;
+            margin-bottom: 12px;
+            color: #00C853;
+        }
+        .cta {
+            background: #1a1a1a;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .cta h3 { font-size: 32px; margin-bottom: 16px; }
+        .cta p { margin-bottom: 32px; color: #ccc; }
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #888;
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 36px; }
+            .hero h2 { font-size: 20px; }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>ClawVision</h1>
-        <p class="subtitle">حلول برمجية متقدمة للروبوتات الصناعية: FANUC، KUKA، Yaskawa</p>
-        <a href="mailto:contact@clawvision.com" class="btn">اطلب عرض سعر</a>
-        
-        <h2>نعتمد على أحدث التقنيات العالمية</h2>
-        <div class="tech">
-            <div class="tech-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/OpenCV_Logo_with_text_svg_version.svg" alt="OpenCV">
-                <p>OpenCV</p>
+        <header>
+            <div class="logo">ClawVision</div>
+            <div class="lang-switch">
+                <a href="/">EN</a> | <a href="/ar">AR</a>
             </div>
-            <div class="tech-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Intel_logo_%282006-2020%29.svg" alt="Intel">
-                <p>Intel</p>
-            </div>
-            <div class="tech-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/OpenVINO_logo.png" alt="OpenVINO">
-                <p>OpenVINO</p>
-            </div>
-            <div class="tech-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python">
-                <p>Python</p>
+        </header>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Advanced AI Software for Industrial Robots</h1>
+            <h2>FANUC, KUKA, Yaskawa</h2>
+            <p>We build intelligent systems that keep your production lines running 24/7 with 99.2% uptime. Predict failures before they happen.</p>
+            <a href="mailto:contact@clawvision.ai" class="btn">Get a Quote</a>
+        </div>
+    </section>
+
+    <section class="tech">
+        <div class="container">
+            <h3>Built on World-Class Technology</h3>
+            <div class="tech-logos">
+                <div class="tech-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Intel_logo_%282006-2020%29.svg" alt="Intel">
+                    <p>Intel</p>
+                </div>
+                <div class="tech-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/OpenCV_Logo_with_text_svg_version.svg" alt="OpenCV">
+                    <p>OpenCV</p>
+                </div>
+                <div class="tech-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python">
+                    <p>Python</p>
+                </div>
+                <div class="tech-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/OpenVINO_logo.png" alt="OpenVINO">
+                    <p>OpenVINO</p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h3>Why ClawVision?</h3>
+            <div class="features-grid">
+                <div class="feature">
+                    <h4>99.2% Uptime</h4>
+                    <p>Our predictive AI models detect anomalies and schedule maintenance before breakdowns occur.</p>
+                </div>
+                <div class="feature">
+                    <h4>80% Less Downtime</h4>
+                    <p>Slash maintenance costs and eliminate unplanned stops. Keep your production line moving.</p>
+                </div>
+                <div class="feature">
+                    <h4>24/7 Support</h4>
+                    <p>Real robotics engineers on call. We respond to critical issues in under 15 minutes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h3>Ready to Upgrade Your Robots?</h3>
+            <p>Contact us for a free consultation and ROI analysis for your plant.</p>
+            <a href="mailto:contact@clawvision.ai" class="btn">Contact Us</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 ClawVision. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
