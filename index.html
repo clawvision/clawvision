@@ -125,19 +125,32 @@
 <body>
     <div class="container">
         <header>
-            <div class="logo">ClawVision</div>
             <div class="lang-switch">
-                <a href="/">EN</a> | <a href="/ar">AR</a>
+  <button onclick="setLang('en')">EN</button> | 
+  <button onclick="setLang('ar')">AR</button>
             </div>
         </header>
     </div>
 
     <section class="hero">
-        <div class="container">
-            <h1>Advanced AI Software for Industrial Robots</h1>
+        <h1 data-en="Advanced AI Software for Industrial Robots" data-ar="برنامج ذكاء اصطناعي متقدم للروبوتات الصناعية">
+  برنامج ذكاء اصطناعي متقدم للروبوتات الصناعية
+        <p data-en="Advanced AI Software for FANUC, KUKA, Yaskawa Robots" data-ar="برنامج ذكاء اصطناعي متقدم لروبوتات FANUC و KUKA و Yaskawa">برنامج ذكاء اصطناعي متقدم لروبوتات FANUC و KUKA و Yaskawa</p>
+            <p data-en="Reduce downtime by 80% with ClawVision" data-ar="قلل وقت التوقف بـ 80% مع ClawVision">قلل وقت التوقف بـ 80% مع ClawVision</p>
             <h2>FANUC, KUKA, Yaskawa</h2>
             <p>We build intelligent systems that keep your production lines running 24/7 with 99.2% uptime. Predict failures before they happen.</p>
-            </p>
+            <script>
+function setLang(lang) {
+  document.querySelectorAll('[data-en]').forEach(el => {
+    el.innerText = el.getAttribute('data-' + lang);
+  });
+  document.documentElement.lang = lang;
+  document.body.style.direction = lang === 'ar' ? 'rtl' : 'ltr';
+  document.body.style.textAlign = lang === 'ar' ? 'right' : 'left';
+}
+// خليه عربية بالديفولت
+setLang('ar');
+</script>
 
 <!-- About Section -->
 <section id="about" style="padding: 80px 20px; background: #f8f8f8; text-align: center;">
@@ -205,7 +218,7 @@
         <div class="container">
             <h3>Ready to Upgrade Your Robots?</h3>
             <p>Contact us for a free consultation and ROI analysis for your plant.</p>
-            <a href="mailto:contact@clawvision.ai" class="btn">Contact Us</a>
+            <a href="mailto: allelkarim98@gmail.com" class="btn">Contact Us</a>
         </div>
     </section>
     </section>
